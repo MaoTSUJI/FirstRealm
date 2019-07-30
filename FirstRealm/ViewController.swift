@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class ViewController: UIViewController {
 
@@ -20,10 +21,38 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        print(Realm.Configuration.defaultConfiguration.fileURL!)
+        
+        // RealmからItemを全件取得する
+        let realm = try! Realm()
+        items = realm.objects(Item.self).reversed()
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        
     }
 
     @IBAction func addItem(_ sender: UIButton) {
+        // 新しいItemクラスを作成(インスタンス化)
+        let item = Item()
+        // Itemクラスに入力されたタイトル（テキスト）を設定
+        item.title = textField.text
         
+        // Realmに保存する
+        let realm = try! Realm()
+        try! realm.write {
+            realm.add(item)
+        }
+        
+        // 最新のItem一覧を取得
+        items = realm.objects(Item.self).reversed()
+        
+        // テーブルを更新
+        tableView.reloadData()
+        
+        // テキストフィールドを空にする
+        textField.text = ""
+
     }
     
 }
