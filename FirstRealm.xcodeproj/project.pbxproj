@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,7 @@
 		6DFCFD7122EFCFE900DD099A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DFCFD6F22EFCFE900DD099A /* Main.storyboard */; };
 		6DFCFD7322EFCFEA00DD099A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DFCFD7222EFCFEA00DD099A /* Assets.xcassets */; };
 		6DFCFD7622EFCFEA00DD099A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DFCFD7422EFCFEA00DD099A /* LaunchScreen.storyboard */; };
+		6DFCFD7E22EFD80600DD099A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFCFD7D22EFD80600DD099A /* Item.swift */; };
 		8CF122F034DB08F5A4BB2C14 /* Pods_FirstRealm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 350358B6635DAC368AB819A2 /* Pods_FirstRealm.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		6DFCFD7222EFCFEA00DD099A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6DFCFD7522EFCFEA00DD099A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DFCFD7722EFCFEA00DD099A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DFCFD7D22EFD80600DD099A /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		AC066E398C9C24B6EBD077EA /* Pods-FirstRealm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstRealm.debug.xcconfig"; path = "Target Support Files/Pods-FirstRealm/Pods-FirstRealm.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,6 +69,7 @@
 				6DFCFD7222EFCFEA00DD099A /* Assets.xcassets */,
 				6DFCFD7422EFCFEA00DD099A /* LaunchScreen.storyboard */,
 				6DFCFD7722EFCFEA00DD099A /* Info.plist */,
+				6DFCFD7D22EFD80600DD099A /* Item.swift */,
 			);
 			path = FirstRealm;
 			sourceTree = "<group>";
@@ -85,7 +88,6 @@
 				AC066E398C9C24B6EBD077EA /* Pods-FirstRealm.debug.xcconfig */,
 				3EC9C6514237D3394EB22568 /* Pods-FirstRealm.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -205,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DFCFD6E22EFCFE900DD099A /* ViewController.swift in Sources */,
+				6DFCFD7E22EFD80600DD099A /* Item.swift in Sources */,
 				6DFCFD6C22EFCFE900DD099A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
